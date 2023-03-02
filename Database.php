@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "phplab4";
+$dbname = "asm";
 // Create connection
 $conn = mysqli_connect($servername,$username, $password,$dbname);
 if (mysqli_connect_errno()) {
@@ -13,11 +13,21 @@ else{
 echo "Connected successfully";
 }
 if (isset($_POST['submit'])) {
-$email = $_POST['email'];
-$age = $_POST['age'];
-$gender = $_POST['gender'];
+$f_name = $_POST['f_name'];
+$l_name = $_POST['l_name'];
+$birthdate = $_POST['birthdate'];
+$p_address = $_POST['p_address'];
+$t_address = $_POST['t_address'];
 $city = $_POST['city'];
-$query = "INSERT INTO data (`email`,`age`,`gender`,`city`)
+$state = $_POST['state'];
+$zip = $_POST['zip'];
+$country = $_POST['country'];
+$degree_name = $_POST['degree_name'];
+$email = $_POST['email'];
+$course_list = $_POST['course_list'];
+$prerequisites = $_POST['prerequisites'];
+$bachelor = $_POST['bachelor'];
+$query = "INSERT INTO data (`f_name`,`l_name`,`birthdate`,`p_address`,`t_address`,`city`,`state`,`zip`,`country`,`degree_name`,`email`,`course_list`,`prerequisites`,`bachelor`)
 VALUES ('".$name."','".$age."','".$gender."','".$city."')";
 $chk = mysqli_query($conn, $query);
 echo $chk;
