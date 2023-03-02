@@ -17,11 +17,11 @@ body{
 .container{
     max-width: 750px;
     padding: 28px;
-    height: 770px;
+    height: 830px;
     margin: 0 28px;
     box-shadow: 0 15px 20px #ABB28B;
     border-radius: 15px;
-    background-image:url('https://img.freepik.com/premium-vector/colorful-holographic-gradient-background-abstract-mesh-gradient-vector-fluid-gradient-background-design_401949-354.jpg?w=2000') ;
+    background-image:linear-gradient(to right,#9FDBFF,#E3D6FD) ;
 }
 
 .my-dropdown {
